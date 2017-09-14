@@ -236,6 +236,7 @@ void scanome(char nome[],int n, int pos, int heroe)
 				printf("%c", nome[i]);
 				i++;
 				fflush(stdin);
+				tecla  = '\x00';
 			}
 		}
 
@@ -247,7 +248,7 @@ void scanome(char nome[],int n, int pos, int heroe)
 				fflush(stdin);
 			}
 			if (tecla >= 'A' && tecla <= 'Z' && espaco == 0) {
-				nome[i] = tecla;
+				nome[i] = tecla + 32;
 				printf("%c", nome[i]);
 				i++;
 				fflush(stdin);
