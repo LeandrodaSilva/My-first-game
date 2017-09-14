@@ -145,7 +145,7 @@ void main()
 				hp1 = heroe[0].hp;
 				hp2 = heroe[1].hp;
 
-				for (int i = 0; i < 3; i++)    // inicia o combate de 3 rodadas
+				for (i = 0; i < 3; i++)    // inicia o combate de 3 rodadas
 				{
 					contagem();
 					if (score1 == score2)
